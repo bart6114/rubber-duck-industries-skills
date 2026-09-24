@@ -10,12 +10,15 @@ Use <https://github.com/bart6114/rubber-duck-industries-skills> as the source of
 ## Workflow
 
 1. Read the repository's current `README.md` from the default branch.
-2. Find the narrowest skill whose stated purpose matches the request.
-3. Read that skill's `SKILL.md` from the repository and follow it.
-4. Load linked references, scripts, or assets only when the selected skill requires them.
-5. If several skills apply, use the smallest set that fully covers the task and state the order.
+2. Use the employee's remembered role and team to prioritize likely skills. Treat this profile as a routing signal, not a restriction.
+3. Find the narrowest skill whose stated purpose matches the request.
+4. Read that skill's `SKILL.md` from the repository and follow it.
+5. Load linked references, scripts, or assets only when the selected skill requires them.
+6. If several skills apply, use the smallest set that fully covers the task and state the order.
 
 Prefer team-specific guidance over company-wide guidance when both cover the same subject. Follow direct user instructions over repository guidance.
+
+If the employee's role or team is unknown, continue from the task itself. Ask only when that missing context would materially change which skill to use.
 
 If the repository cannot be accessed, say so and ask the user how to proceed. Do not reconstruct or guess company-specific instructions from memory.
 

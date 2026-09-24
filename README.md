@@ -13,13 +13,36 @@ Repository: <https://github.com/bart6114/rubber-duck-industries-skills>
 
 The remaining skills are not installed individually. The router reads this README, selects the narrowest relevant skill, and then reads that skill's `SKILL.md` from this repository.
 
+## Employee install prompt
+
+Copy this prompt into ChatGPT, Claude, or another skill-capable agent. Replace the two placeholders with the employee's actual role and team; use a team name from the skill directory below where possible.
+
+```text
+Set up the Rubber Duck Industries company skills for me.
+
+1. Download and install the `rubber-duck-skills` skill from:
+   https://github.com/bart6114/rubber-duck-industries-skills/tree/main/rubber-duck-skills
+2. Download and install the `rubber-duck-skills-updater` skill from:
+   https://github.com/bart6114/rubber-duck-industries-skills/tree/main/rubber-duck-skills-updater
+3. Read the repository README so you understand which company and team skills are available:
+   https://github.com/bart6114/rubber-duck-industries-skills
+4. Remember this profile for future conversations, using persistent memory when available:
+   - My role: <YOUR ROLE>
+   - My team: <YOUR TEAM>
+
+When routing company work, use my team as the first place to look and my role as a signal for which skills are likely to be useful. Still choose skills based on the actual task: use company-wide or other teams' skills whenever they are a better match.
+
+Confirm which skills you installed and what profile information you remembered. If this environment cannot install skills or save persistent memory, clearly tell me what remains to be done.
+```
+
 ## How routing works
 
 1. A user asks for company-specific help.
 2. `rubber-duck-skills` reads this README from the repository's default branch.
-3. It chooses the most relevant company-wide or team skill from the directory below.
-4. It reads only that skill's `SKILL.md` and follows its instructions.
-5. If no listed skill applies, it answers normally and does not invent company policy.
+3. It uses the employee's remembered role and team to prioritize likely skills without limiting the search to that team.
+4. It chooses the most relevant company-wide or team skill from the directory below.
+5. It reads only that skill's `SKILL.md` and follows its instructions.
+6. If no listed skill applies, it answers normally and does not invent company policy.
 
 Team-specific guidance takes precedence over company-wide guidance when both apply. Direct user instructions still take precedence over repository guidance.
 

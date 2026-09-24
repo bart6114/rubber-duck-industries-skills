@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rubber Duck Skills Updater"
+  short_description: "Propose company skill updates by pull request"
+  default_prompt: "Use $rubber-duck-skills-updater to update this company skill and open a pull request."

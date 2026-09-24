@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rubber Duck Skills"
+  short_description: "Route work to current company skills"
+  default_prompt: "Use $rubber-duck-skills to find and apply the right company skill for this task."
